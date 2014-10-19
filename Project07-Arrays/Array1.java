@@ -7,6 +7,8 @@ public class Array1
 	{
 		int[] arrayX = new int[ 3 ];
 		int[] arrayY = { 1, 2, 3 };
+		
+		System.out.printf("%s", "The elements of arrayX are: ");
 
 		for ( int counter = 0; counter < 3; counter++ )
 		{
