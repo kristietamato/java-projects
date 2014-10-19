@@ -11,20 +11,20 @@ public class LengthOfVector
 		double[] arrayX = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		
 		// output vector lengths.
-		System.out.println("The length of the vectors are:");
+		System.out.println("The lengths of the vectors are:");
 		getLength( arrayX );
 		for ( double length : arrayX )
 			System.out.printf("%.1f\n", length );
 	}
 	
-	public static double getLength( double[] arrayX2 )
+	public static void getLength( double[] arrayX )
 	{
 		double sum = 0;
 		
-		for (int counter = 0; counter < arrayX2.length; counter++)
+		for (int counter = 0; counter < arrayX.length; counter++)
 		{
-			sum = sum + ( arrayX2[ counter ] * arrayX2[ counter ] );
+			sum = sum + ( arrayX[ counter ] * arrayX[ counter ] );
+			arrayX[ counter ] = Math.sqrt( sum );
 		}
-		return Math.sqrt( sum );
 	}
 }
