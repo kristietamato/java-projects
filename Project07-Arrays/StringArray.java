@@ -15,8 +15,9 @@ public class StringArray
 		return suits;
 	}
 
-	public double setArray()
+	public double setArray( stringArray )
 	{
+		String[] suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
 		String temp = "";
 		
 		for ( int counter = 0; counter < String.length; counter++ )
