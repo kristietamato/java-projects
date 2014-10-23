@@ -29,13 +29,13 @@ public class Rectangle
 	}
 
 	// get perimeter function
-	public float getPerimeter( float length, float width )
+	public float getPerimeter()
 	{
 		return 2 * ( length + width);
 	}
 
 	// get area function
-	public float getArea( float length, float width )
+	public float getArea()
 	{
 		return length * width;
 	}
