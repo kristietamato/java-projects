@@ -8,8 +8,7 @@ public class RectangleTest
     	// new cone object reference
     	Rectangle myRectangle = new Rectangle();
 
-
-        // test
+        // test values
         try
         {
         	myRectangle.setLengthAndWidth( 56.0f, 5.0f );
