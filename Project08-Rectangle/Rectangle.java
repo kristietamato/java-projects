@@ -2,11 +2,12 @@
 // Rectangle - Calculates a rectangle's perimeter and area; has set methods
 // that verify that length and width are each floating-point numbers 
 // larger than 0.0 and less than 20.0.
+
 public class Rectangle
 {
 	// variables
-	float length;
-	float width;
+	private float length;
+	private float width;
 
 	public Rectangle()
 	{
@@ -16,10 +17,26 @@ public class Rectangle
 	}
 
 	// set length
+	public void setLength( float newLength )
+	{
+		length = newLength;
+	}
 
 	// set width
+	public void setWidth( float newWidth )
+	{
+		width = newWidth;
+	}
 
-	// get perimeter
+	// get perimeter function
+	public float getPerimeter( float length, float width )
+	{
+		return 2 * ( length + width);
+	}
 
-	// get area
+	// get area function
+	public float getArea( float length, float width )
+	{
+		return length * width;
+	}
 }
