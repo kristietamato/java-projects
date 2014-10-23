@@ -20,13 +20,13 @@ public class Rectangle
 	public void setLengthAndWidth( float newLength, float newWidth )
 	{
 		// validate length and width
-		if ( newLength > 1.4E-45f && newLength < 340282346638528860000000000000000000000.000000f )
+		if ( newLength > 0.0f && newLength < 20.0f )
 		{
 			length = newLength;
 			width = newWidth;
 		}
 		else
-			throw new IllegalArgumentException( "length out of range" );
+			throw new IllegalArgumentException( "length out of range." );
 	}
 
 	// get perimeter function

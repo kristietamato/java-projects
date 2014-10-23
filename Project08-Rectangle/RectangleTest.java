@@ -8,17 +8,25 @@ public class RectangleTest
     	// new cone object reference
     	Rectangle myRectangle = new Rectangle();
 
-        // test values
+        float newLength = 10.0f;
+        float newWidth = 10.0f;
+        myRectangle.setLengthAndWidth( newLength, newWidth );
+
+        // outputs volume and surface area
+        System.out.printf("The perimeter of the rectangle is %.1f.\n" , myRectangle.getPerimeter());
+        System.out.printf("The area of the rectangle is %.1f.\n" , myRectangle.getArea());
+        System.out.println();
+        // test invalid values
         try
         {
-        	myRectangle.setLengthAndWidth( 56.0f, 5.0f );
+        	myRectangle.setLengthAndWidth( 0.0f, 100.0f );
         }
         catch ( IllegalArgumentException e )
         {
         	System.out.printf( "Exception: %s\n\n", e.getMessage() );
         }
 
-        // outputs volume and surface area
+        // outputs volume and surface area after test
         System.out.printf("The perimeter of the rectangle is %.1f.\n" , myRectangle.getPerimeter());
         System.out.printf("The area of the rectangle is %.1f.\n" , myRectangle.getArea());
     }
