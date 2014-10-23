@@ -12,20 +12,21 @@ public class Rectangle
 	public Rectangle()
 	{
 		// constructor
-		length = 1;
-		width = 1;
+		length = 1.0f;
+		width = 1.0f;
 	}
 
-	// set length
-	public void setLength( float newLength )
+	// set length and width
+	public void setLengthAndWidth( float newLength, float newWidth )
 	{
-		length = newLength;
-	}
-
-	// set width
-	public void setWidth( float newWidth )
-	{
-		width = newWidth;
+		// validate length and width
+		if ( newLength > 1.4E-45f && newLength < 340282346638528860000000000000000000000.000000f )
+		{
+			length = newLength;
+			width = newWidth;
+		}
+		else
+			throw new IllegalArgumentException( "length out of range" );
 	}
 
 	// get perimeter function
