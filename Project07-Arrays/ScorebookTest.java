@@ -1,5 +1,5 @@
 // Created by Kristie Nguyen on 10/18/2014.
-// AverageTest - main class to test Average class.
+// ScorebookTest - main class to test Average class.
 
 public class ScorebookTest 
 {

@@ -1,5 +1,6 @@
 // Created by Kristie Nguyen on 10/18/2014.
-// Average - Gets the average of an array of scores.
+// Scorebook - Gets the average of an array of scores.
+
 public class Scorebook 
 {
 	private double[] scores;
