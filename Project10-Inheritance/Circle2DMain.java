@@ -9,6 +9,6 @@ public class Circle2DMain
     	Circle2D myCircle = new Circle2D(1.5, 2.5, 5.0);
 
         // print using toString
-        System.out.printf("%s", myCircle.toString());
+        System.out.printf("%s", myCircle);
      }
 }

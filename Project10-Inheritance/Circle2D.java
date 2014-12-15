@@ -11,9 +11,9 @@ public class Circle2D
 	// constructor
 	public Circle2D(double x, double y, double r)
     {
-		xCoordinate = x;
-		yCoordinate = y;
-    	radius = r;
+		setxCoordinate (x); // x = 0;
+		setyCoordinate (y);
+		setRadius (r);
     }
 
 	// method to change xCoordinate
@@ -57,7 +57,8 @@ public class Circle2D
     {
     	return radius * radius * Math.PI;
     }
-	
+
+	@Override
 	public String toString()
 	{
 	    return String.format("The area of the circle with radius %.1f"

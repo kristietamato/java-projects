@@ -51,7 +51,7 @@ public class Sphere extends Circle2D
 	  		double area, volume;
 	  		area = sphereArray[counter].getArea();
 	  		volume = sphereArray[counter].getVolume();
-	  	  	System.out.printf("%.1f\t%.1f\t%.1f\n", (double)counter, area, volume);
+	  	  	System.out.printf("%8.1f\t%8.1f\t%8.1f\n", (double)counter, area, volume);
 	  	}
 
 	}
